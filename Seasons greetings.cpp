@@ -8,11 +8,13 @@ int main(){
     int month;
     cout << "Enter month as a number: ";
     cin >> month;
-    if month > 11 {
+    if (month < 3 || month > 11) {
     cout << "Happy Winter";
-    } else if month < 7 {
+    }
+    if (month >= 3 && month < 7) {
     cout << "Happy Spring";
-    } else if month < 9 {
+    } 
+    if (month >= 7 && month < 9) {
     cout << "Happy Summer";
     } else {
     cout << "Happy fall";
